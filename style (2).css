@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+    text-align: center;
+}
+body{
+    background : linear-gradient(90deg, rgba(173, 1background66, 166, 1) 0%, rgba(235, 235, 235, 1) 100%);
+    background: #ada6a6;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color:black ;
+}
+.menu,a{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+     background-color:black ;
+     color: rgb(185, 185, 185);
+}
+.header,a:hover{
+    color:white;
+    
+}
+.hero{
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+button{
+    border-radius: 20px;
+    padding: 10px;
+}
+button:hover{
+    color: rgb(182, 184, 184);
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+   padding: 10px;
+   border: 5px solid grey;
+   border-radius: 20px;
+   display: grid;
+   width: 200px;
+   height: 200px;
+  flex-wrap: wrap;
+   
+}
+.card:hover{
+   transition: all ease-in 0.2s;
+    box-shadow: 10px 10px white;
+   transform: scale(1.0);
+}
+.content-area{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 50px;
+    
+}
+.content {
+    border: 2px solid grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-left:20px;
+    width: 350px;
+    border-radius:20px ;
+    padding: 20px;
+   
+}
+.sidebar,a,li{
+    display: flex;
+    row-gap: 20px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    border-radius:10px ;
+    height: fit-content;
+    padding:10px;
+}
+img{
+    padding-top:30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+a:hover{
+    background-color: rgb(80, 80, 80);
+}
+.form-section{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+form{
+    display: inline;
+    justify-content: center;
+    border: 2 px solid grey;
+}
+input{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid grey;
+}
+textarea{
+    text-align: center;
+    padding:10px;
+    border-radius: 20px;
+    display: grid;
+    margin-top:10px;
+     border: 5px solid grey;
+}
+button{
+    margin-top:20px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+label{
+    text-align: center;
+    padding:10px;
+    border-radius: 20px;
+    display: grid;
+    margin-top:10px;
+    resize: both;
+    min-width: fit-content;
+}
+footer{
+    margin-top: 20px;
+    background-color:black ;
+    color:white;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+@media(min-width: 576px){}
