@@ -1,0 +1,24 @@
+.h1{
+   position:center;
+    background-color: skyblue;
+    border-radius: 10px;
+    font-size:large;
+}
+.h2{
+   position: center;
+   background-color:skyblue;
+    border-radius: 20px;
+    font-size:large;
+    
+    
+}
+
+/*Il selettore ci permette di selezionare l'elemento a cui vogliamo applicare uno stile css*/
+/*Dopo aver introdotto il selettore dovremo aprime le parentesi graffe e metterci le proprietà */
+/*Se io seleziono un selettore come p tutti gli elementi dell'selettore indicato saranno uguali a livello di stile */
+.p{
+    color:skyblue;/*Serve per modificare il colore dell'carattere */
+    font-size:15px;/*Serve per modificare la dimensione dell'carattere */
+    line-height:3.2; /*Interlinea cioè lo spazio verticale tra le righe di testo*/
+    
+}
