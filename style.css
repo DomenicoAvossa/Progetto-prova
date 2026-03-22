@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    
 }
 ul{
     display: flex;
@@ -34,7 +35,6 @@ a:hover{
 li{
     list-style-type: none;
 }
-
 .Home-section,h1{
     padding: 20px;
     display: grid;
@@ -114,13 +114,19 @@ button{
     margin-left: 20px;
     padding: 10px;
 }
-@media(max-width:768px){
-     .About-section {
-        flex-direction: column; 
-        gap: 10px;
+@media (max-width: 768px) {
+    header ul {
+        gap: 1.5em;      
     }
 
-    .table1, .table2 {
-        width: 100%; 
+    header ul li a {
+        font-size: 14px;  
+    }
+
+    header {
+        flex-direction: column; 
+        padding: 10px;
+        height: auto;
     }
 }
+
