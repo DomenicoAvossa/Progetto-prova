@@ -1,132 +1,194 @@
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
-    cursor:pointer;
+    padding:0;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+
 body{
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, #e0f7ff 0%, #ffffff 100%);
+    background-repeat: no-repeat;
 }
 header{
-    background: #020024;
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    background: #080457;
     display: flex;
     padding:20px;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    
 }
+
 ul{
     display: flex;
-    gap:5em;
+    gap:3em;
 }
+
+li{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
-    color:rgb(216, 216, 216);
-    font-weight: 800;
-    transition: all 0.5s linear;
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+    transition: 0.3s;
 }
+
 a:hover{
-    color:grey;
-    font-size: larger;
-    text-decoration: underline;
+    color: rgb(0, 136, 255);
 }
-li{
-    list-style-type: none;
+
+main {
+    flex: 1;
 }
-.Home-section,h1{
-    padding: 20px;
-    display: grid;
-    justify-content: center;
-    text-align:justify;
+
+.Home-section{
+    padding: 40px 20px;
+    text-align: center;
 }
+
 h2{
-    padding: 20px;
-    line-height: 5vh;
+    margin-top: 10px;
+    line-height: 1.6;
 }
+
+p{
+    margin-top: 15px;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
 span{
-    color:rgb(0, 136, 255)
+    color: rgb(0, 136, 255);
 }
 
 .About-section{
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
-    margin: 0;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.table1{
-    border-style:solid;
-    margin-right: 20px;
+
+.table1, .table2{
+    width: 250px;
     border-collapse: collapse;
-    border-color: rgba(128, 128, 128,0.5);
-    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
-.titletable-1{
-    background-color: yellow;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-style:solid;
-    border-color: rgba(128, 128, 128,0.5);
+
+.table1:hover, .table2:hover{
+    transform: translateY(-5px);
+}
+
+caption{
+    background-color: rgb(0, 136, 255);
+    color: white;
     padding: 10px;
-}
-.table2{
-    border-style:solid;
-    border-collapse: collapse;
-    border-color: rgba(128, 128, 128,0.5);
-    width: 50%;
-}
-.table1, .table2 {
-    transition: all 0.3s ease; 
+    font-weight: bold;
 }
 
-.table1:hover, .table2:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-tr,td{
+td{
     padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
 }
-.titletable-2{
-    background-color: rgb(0, 0, 255);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-style:solid;
-    border-color: rgba(128, 128, 128,0.5);
-    padding: 10px;
-}
-.header-about{
-    padding: 20px;
-}
-.Contact-section{
-    padding: 20px;
-}
-form{
-    padding: 20px;
-    display: grid;
 
+.Project{
+    text-align: center;
+    padding: 40px 20px;
 }
+
+.Project-section a[href]{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgb(0, 136, 255);
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.Project-section a:hover{
+    background: #005fcc;
+}
+
+.Contact-section{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
 input{
     padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
+
 button{
-    margin-left: 20px;
     padding: 10px;
+    border: none;
+    background: #080457;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+button:hover{
+    background: #0000aa;
+}
+
+footer{
+    background-color: #080457;
+    color:white;
+    padding: 25px;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color:white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: rgb(0, 136, 255);
+}
+
 @media (max-width: 768px) {
-    header ul {
-        gap: 1.5em;      
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul{
+        gap: 1.5em;
     }
 
-    header ul li a {
-        font-size: 14px;  
+    .About-section{
+        flex-direction: column;
+        align-items: center;
     }
 
-    header {
-        flex-direction: column; 
-        padding: 10px;
-        height: auto;
+    .table1, .table2{
+        width: 80%;
     }
 }
-
